@@ -1,4 +1,4 @@
-FROM debian:buster-slim
+FROM debian:stable-slim
 WORKDIR /root
 RUN \
 echo "**** install runtime packages ****" && \
