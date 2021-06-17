@@ -6,6 +6,6 @@ RUN apt-get update && \
     && git clone -b master --single-branch https://github.com/Wind4/vlmcsd.git \
     && cd vlmcsd \
     && make
-COPY vlmcsd/bin/vlmcsd /vlmcsd
+COPY vlmcsd/bin/vlmcsd vlmcsd
 EXPOSE 1688
 CMD [ "vlmcsd"]
