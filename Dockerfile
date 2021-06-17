@@ -3,7 +3,6 @@ RUN apt-get update && \
     apt-get install -y \
         git \
         make \
-        build-base \
         tzdata \
     && git clone -b master --single-branch https://github.com/Wind4/vlmcsd.git \
     && cd vlmcsd \
