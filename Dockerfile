@@ -10,5 +10,5 @@ RUN apt-get update && \
     && cd vlmcsd \
     && make
 COPY --from=builder /root/vlmcsd/bin/vlmcsd /vlmcsd
-EXPOSE 1688/tcp
-CMD [ "/vlmcsd", "-D", "-d" ]
+EXPOSE 1688
+CMD [ "vlmcsd", "-D", "-d" ]
