@@ -8,7 +8,7 @@ apk add --no-cache --upgrade \
         build-base \
         tzdata && \
 echo "**** git vlmcsd ****" && \
-git clone --branch master --single-branch https://github.com/Wind4/vlmcsd.git && \
+git clone --branch master --single-branch https://github.com/Wind4/vlmcsd.git vlmcsd && \
 cd vlmcsd && \
 make
 COPY --from=builder /root/vlmcsd/bin/vlmcsd /vlmcsd
