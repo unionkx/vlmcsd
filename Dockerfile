@@ -6,7 +6,7 @@ RUN apt-get update && \
         make \
         build-base \
         tzdata \
-    && git clone --b master --single-branch https://github.com/Wind4/vlmcsd.git \
+    && git clone -b master --single-branch https://github.com/Wind4/vlmcsd.git \
     && cd vlmcsd \
     && make
 COPY --from=builder /root/vlmcsd/bin/vlmcsd /vlmcsd
