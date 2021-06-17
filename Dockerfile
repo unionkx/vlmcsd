@@ -2,7 +2,7 @@ FROM debian:stable-slim
 WORKDIR /root
 RUN \
 echo "**** install runtime packages ****" && \
-apt update && \
+apt-get update && \
 apt-get install -y --no-install-recommends \
         git \
         make \
