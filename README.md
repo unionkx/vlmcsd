@@ -4,11 +4,15 @@
 Docker based in Alpine OS with vlmcsd compiled from "source" (Wind4 GitHub)
 
 ## Server Usage:
-> docker run -d -p 1688:1688 --restart=always --name vlmcsd unionk/vlmcsd
+```
+docker run -d -p 1688:1688 --restart=always --name vlmcsd unionk/vlmcsd
+```
 
 ## To view docker log:
 Now (thanks to embii74) vlmcsd process send logs to docker.
-> $ docker logs vlmcsd (change 'vlmcsd' with the docker's name)
+```
+$ docker logs vlmcsd (change 'vlmcsd' with the docker's name)
+```
 
 ## Client
 ### Windows
