@@ -3,7 +3,11 @@
 ## Info / About this docker
 Docker based in Alpine OS with vlmcsd compiled from "source" (Wind4 GitHub)
 
-## Server Usage:
+## Pull Image
+```
+docker pull mogeko/vlmcsd
+```
+## Usage:
 ```
 docker run -d -p 1688:1688 --restart=always --name vlmcsd unionk/vlmcsd
 ```
