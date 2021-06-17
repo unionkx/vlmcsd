@@ -1,4 +1,4 @@
-# A docker image running vlmcsd
+# A docker image for vlmcsd
 
 ## Pull Image
 ```
