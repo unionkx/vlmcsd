@@ -1,9 +1,5 @@
 # A docker image for vlmcsd
 
-## Pull Image
-```
-docker pull unionk/vlmcsd
-```
 ## Usage:
 ```
 docker run -d -p 1688:1688 --restart=always --name vlmcsd unionk/vlmcsd
