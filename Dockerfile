@@ -6,7 +6,6 @@ RUN apk add --no-cache git make build-base && \
     make
 
 FROM alpine:latest
-WORKDIR /root/
 COPY --from=builder /root/vlmcsd/bin/vlmcsd /vlmcsd
 RUN apk add --no-cache tzdata
 EXPOSE 1688/tcp
