@@ -1,10 +1,9 @@
 FROM alpine:latest
 WORKDIR /root
-RUN apk add --no-cache git make build-base && \
+RUN apk add --no-cache git make build-base tzdata && \
     git clone --branch master --single-branch https://github.com/Wind4/vlmcsd.git && \
-    cd vlmcsd/ && \
+    cd vlmcsd && \
     make
-COPY --from=builder /root/vlmcsd/bin/vlmcsd /usr/bin/vlmcsd
-RUN apk add --no-cache tzdata
+COPY --from=builder /root/vlmcsd/bin/vlmcsd /vlmcsd
 EXPOSE 1688/tcp
-CMD [ "/usr/bin/vlmcsd", "-D", "-d" ]
+CMD [ "/vlmcsd", "-D", "-d" ]
