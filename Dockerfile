@@ -1,4 +1,3 @@
-  
 FROM alpine:latest as builder
 WORKDIR /root
 RUN apk add --no-cache git make build-base && \
